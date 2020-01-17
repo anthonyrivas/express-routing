@@ -1,4 +1,19 @@
-data = [];
+data = [{
+  id: 1,
+  post: "Hello"
+},
+{
+  id: 2,
+  post: "There"
+},
+{
+  id: 3,
+  post: "The angel"
+},
+{
+  id: 4,
+  post: "from my nightmare"
+}];
 module.exports = function(app) {
 
   app.get('/', (req, res) => {
