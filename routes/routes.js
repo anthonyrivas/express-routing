@@ -24,8 +24,9 @@ module.exports = function(app) {
     const {username, password} = req.body;
     if (username === 'jsmith' && password === 'I wanna rock!') {
       res.send(`Welcome John, I wanna rock too!`);
+    } else {
+      res.send(`Sorry, I don't know that user`);
     }
-    res.send(`Sorry, I don't know that user`);
   });
   
   app.get('/posts', (req, res) => {
